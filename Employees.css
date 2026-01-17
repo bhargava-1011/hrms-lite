@@ -1,0 +1,107 @@
+.employees {
+  padding: 2rem 0;
+}
+
+.employees-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.employees-header .page-title {
+  margin: 0;
+}
+
+.employees-table-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.employees-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.employees-table thead {
+  background-color: #f5f5f5;
+}
+
+.employees-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+}
+
+.employees-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  color: #666;
+}
+
+.employee-row:hover {
+  background-color: #f9f9f9;
+}
+
+.emp-id {
+  font-weight: 600;
+  color: #667eea;
+}
+
+.emp-name {
+  font-weight: 500;
+}
+
+.emp-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.confirm-message {
+  padding: 1rem 0;
+}
+
+.confirm-message p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.text-warning {
+  color: #e74c3c;
+  font-size: 0.9rem !important;
+}
+
+@media (max-width: 768px) {
+  .employees-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .employees-header .btn {
+    width: 100%;
+  }
+
+  .employees-table {
+    font-size: 0.85rem;
+  }
+
+  .employees-table th,
+  .employees-table td {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .emp-actions {
+    flex-direction: column;
+  }
+
+  .emp-actions .btn {
+    font-size: 0.8rem;
+  }
+}

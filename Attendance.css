@@ -1,0 +1,166 @@
+.attendance {
+  padding: 2rem 0;
+}
+
+.attendance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.attendance-header .page-title {
+  margin: 0;
+}
+
+.attendance-filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.attendance-filters select {
+  min-width: 250px;
+}
+
+.attendance-table-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.attendance-table thead {
+  background-color: #f5f5f5;
+}
+
+.attendance-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+}
+
+.attendance-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  color: #666;
+}
+
+.attendance-row:hover {
+  background-color: #f9f9f9;
+}
+
+.emp-name {
+  font-weight: 500;
+}
+
+.date {
+  color: #667eea;
+  font-weight: 500;
+}
+
+.status {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.status-present {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-absent {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.att-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.summary-content {
+  padding: 1rem 0;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.summary-row.highlight {
+  background-color: #f9f9f9;
+}
+
+.summary-label {
+  font-weight: 600;
+  color: #333;
+}
+
+.summary-value {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #667eea;
+}
+
+.summary-value.present {
+  color: #27ae60;
+}
+
+.summary-value.absent {
+  color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+  .attendance-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .attendance-header .btn {
+    width: 100%;
+  }
+
+  .attendance-filters {
+    flex-direction: column;
+  }
+
+  .attendance-filters select {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .attendance-table {
+    font-size: 0.85rem;
+  }
+
+  .attendance-table th,
+  .attendance-table td {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .att-actions {
+    flex-direction: column;
+  }
+
+  .att-actions .btn {
+    font-size: 0.8rem;
+  }
+}
