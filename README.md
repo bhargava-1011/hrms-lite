@@ -2,6 +2,16 @@
 
 A lightweight Human Resource Management System built with FastAPI and React.
 
+## 🚀 Deploy Now
+
+Deploy HRMS Lite to the cloud in minutes:
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
+[![Deploy to Railway](https://railway.app/button.svg)](https://railway.app/template/new)
+[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/bhargava-1011/hrms-lite)
+
+**👉 [See detailed deployment guide](DEPLOY_NOW.md)** - Step-by-step instructions for Render, Railway, Vercel, and Netlify.
+
 ## 🎯 Features
 
 - **Employee Management**: Add, view, and delete employee records
