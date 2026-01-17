@@ -12,8 +12,7 @@ NC='\033[0m' # No Color
 
 # Start Backend
 echo -e "${BLUE}Starting Backend API (Port 8001)...${NC}"
-cd backend
-/Users/manasrajpur/Desktop/hrms-lite/backend/venv/bin/python -m uvicorn main:app --reload --port 8001 > /tmp/backend.log 2>&1 &
+python3 -m uvicorn main:app --reload --port 8001 > backend.log 2>&1 &
 BACKEND_PID=$!
 echo -e "${GREEN}✓ Backend started (PID: $BACKEND_PID)${NC}"
 echo ""
@@ -23,8 +22,7 @@ sleep 3
 
 # Start Frontend
 echo -e "${BLUE}Starting Frontend (Port 3000)...${NC}"
-cd ../frontend
-npm run dev > /tmp/frontend.log 2>&1 &
+npm run dev > frontend.log 2>&1 &
 FRONTEND_PID=$!
 echo -e "${GREEN}✓ Frontend started (PID: $FRONTEND_PID)${NC}"
 echo ""
