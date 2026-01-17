@@ -38,7 +38,7 @@ export function Attendance() {
   const handleMarkAttendance = async (formData) => {
     try {
       setError(null);
-      await attendanceAPI.mark(formData);
+      await attendanceAPI.create(formData);
       setSuccess('Attendance marked successfully!');
       setShowModal(false);
       fetchData();
